@@ -1,0 +1,8 @@
+@model List<Student>
+
+    @foreach (var item in Model)
+    {
+        @item.Name
+        @item.Address
+        <a asp-action="Details" asp-controller="Photo" asp-route-id="@item.Id">View </a>
+    }

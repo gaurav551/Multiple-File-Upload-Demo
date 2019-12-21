@@ -1,0 +1,12 @@
+@model Student
+
+
+<h1> hello @Model.Name </h1>
+
+@foreach (var x in ViewBag.image)
+{
+        
+        
+         <img src="/studentimages/@x" height="100px" width="100px">
+          <br>
+}
